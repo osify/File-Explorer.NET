@@ -1,0 +1,84 @@
+Application specification:
+=================
+Goal: Fetch all files in all windows drives or from share folder drive, filter by file extensions. Possibly to copy those files to any destination
+
+How to manage the application?
+======================
+- Give 2 options: Local windows share (to select drive to search) or network share
+- The file paths will store in text file according to following template:
+     - local_[pc_name]_drive_c
+     - share_[pc_name]_drive or share_[pc_name]_[folder_share_name]
+- Database files save data or remove data only when we go to syncronize
+- For option data we need another text file
+
+1. Local Windows share
+When we choose this option, will list all windows drives. So you need to decide which drive you need to filter and search your expected files.
+After decided, just click on search so all file path will be search and save into the database in order to use.
+Note for this option, you may only use to share files in local PC only, not to cross the network.
+
+2. Network share
+Click on network share, you need to make sure that your PC is already in the same domain or the same Workgroup.
+To know this go to right click on My Computer -> Computer Name, you may find, the domain name or workgroup name as well.
+
+You can put a share pc to search or you can search all available network share that your PC can access.
+Then you will need to decide which share foldername to use for searching or click ALL to search
+Finally click on Search to go.
+
+
+Copy Interface:
+============
+Two list: Source and destination
+Just select file paths at sources and send to destination
+
+
+
+movie 10,11
+image 12,13
+music 14,14
+software 15,16
+E-Book 19,20
+Report 21,22
+Other 23
+Special 17,18
+
+
+
+
+
+==========
+// List all drive
+private void btnPopulate_Click(object sender, System.EventArgs e)
+{
+   // Store in a string array
+   string[] drives = Environment.GetLogicalDrives();
+   // Loop into the string array
+   foreach(string strDrive in drives)
+   {
+      // Add items (drives) to the list
+      listBox1.Items.Add(strDrive.ToString());
+   }
+}
+
+======
+DriveInfo[] drives = DriveInfo.GetDrives();
+foreach (DriveInfo drive in drives)
+{
+    string label = drive.IsReady ?
+        String.Format( " - {0}", drive.VolumeLabel ) : null;
+    Console.WriteLine( "{0} - {1}{2}", drive.Name, drive.DriveType, label );
+}
+C:\ – Fixed – WinXP
+D:\ – Fixed – Data
+E:\ – CDRom
+F:\ – CDRom
+G:\ – Removable
+H:\ – Removable
+T:\ – Fixed – Temp
+U:\ – Fixed – Backups
+V:\ – Fixed – VMs
+W:\ – Fixed – Vista
+
+http://forums.devshed.com/net-development-87/c-remote-file-copy-126665.html
+
+C# - Retrieving Directory/Network Share Info
+http://arstechnica.com/civis/viewtopic.php?f=20&t=596469

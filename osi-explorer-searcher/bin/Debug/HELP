@@ -1,0 +1,25 @@
+HELP
+==============
+1. Manage Playlists
+We have 2 levels of playlist (Main & Sub)
+You can create whatever you want with the right icon of your subject.
+
+- Right Click on hierachy of the playlist
+- Click on New Playlist menu, 
+- Fillup the form as you see
+- Click Save
+
+2. Manage Playlist files
+Please follow for following way:
+- Select the playlist you want to save file path
+- You need to open the browser or network share folders to copy or drag the files drop 
+- Drop files or Right Click paste the file paths to the playlist file panel
+- You've done
+
+3. Copy the files from playlist to any media or explorer
+- Select the playlists
+- Select files from playlist file panel
+- Drag or Copy the files
+- Drop or paste to the explorer as well
+
+Currently not support copying the whole playlist

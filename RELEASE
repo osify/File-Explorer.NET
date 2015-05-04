@@ -1,0 +1,67 @@
+AUTHOR
+======
+By Mr. SOK Pongsametrey, 
+Website: http://osify.com
+
+THE APPLICATION
+===============
+To manage favorite files into categories, here I called playlists.
+You can drag & drop those files as your favorites.
+
+	FEATURE
+	=============
+	- Manage Favorite file playlists
+	- Manage Favorite file path to each playlists
+	- Drag & Drop
+	- Using Right click for all actions
+	- Database file flexible
+
+	FUTURE FEATURE (ENHANCEMENT)
+	============================
+	- Export playlist for music to play with most media player
+	- Inline play music or video files
+
+RELEASE
+=============
+
+Version 1.0.0.2 - 29/04/2010
+- Change information part to status bar
+- Add information of number of file
+- Remove unneeded info
+- Create admin option (password / 
+- Rename playlist to list
+
+Version 1.0.0.1 - 29/04/2010
+- Correct bug when drag files to parent playlist, db file not found (if didn't first create playlist)
+- Add information bar on the left
+
+TODO IN NEXT VERSION
+====================
+- Application config -> To improve and more test
+- Edit/Delete playlist
+- Cut files from this application
+- Delete file path from playlists
+- Improve GUI or Effect
+
+Version 1.0.0.0 - 28/04/2010
+- Remove all work of try version 0.0.0.1 but keep that idea
+- Add playlist with icon for 2 levels only (New playlist only)
+- Db using files
+- Manage files for each playlist (Copy / Past)
+- Drag and Drop files into playlist or to move those files to any applications
+- Manage application config properties to load db from any where you want (TO IMPROVE)
+- Simple GUI
+
+TODO IN NEXT VERSION
+====================
+- Application config -> To improve and more test
+- Edit/Delete playlist
+- Cut files from this application
+- Delete file path from playlists
+- Improve GUI or Effect
+
+
+Version 0.0.0.1 - 19/04/2010
+- Manage option in option page with local drive
+- Manage File Criteria
+- All configuration files in current execution path
